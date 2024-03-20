@@ -1,5 +1,5 @@
 (function () {
-  let pluginVersion = "1.0.0";
+  let pluginVersion = "1.0.1";
 
   let originalCompile;
   let originalWrite;
@@ -46,7 +46,7 @@
         let output = [
           "# Made in Blockbench " +
             appVersion +
-            " and intercepted by OBJ Uniquifier Plugin " +
+            " and modified by OBJ Uniquifier Plugin " +
             pluginVersion,
         ];
         let indexVertex = 0;
