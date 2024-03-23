@@ -1,5 +1,5 @@
 (function () {
-  let pluginVersion = "1.0.1";
+  let pluginVersion = "1.0.2";
 
   let originalCompile;
   let originalWrite;
@@ -27,11 +27,11 @@
         down: [0, -1, 0],
       };
 
-      let elementCount = 0;
-
       let _obj_export;
 
       Codecs.obj.compile = (options) => {
+        let elementCount = 0;
+
         if (!options) options = 0;
 
         var old_scene_position = new THREE.Vector3().copy(scene.position);
